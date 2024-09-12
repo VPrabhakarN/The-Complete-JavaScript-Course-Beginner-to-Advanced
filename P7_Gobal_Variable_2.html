@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Global Variable using window object</title>
+</head>
+<body>
+    <h1>This is example of Global Variable</h1>
+    <p>Global variable can be accessed inside the scope using window object.</p>
+    <p>The variable defined in the scope can be accessed out side of the scope using wnidow object.</p>
+
+    <script>
+        // defining the function 
+        function abc(){
+            window.value = "This variable is defined inside the abc function.";
+            document.write("Value variable is used in abc function : " + window.value);
+        }
+
+        // calling the abc function
+        abc();
+
+        // accessing the variable defined inside function usinng window object
+        document.write("<br>");
+        document.write("Value variable is used in the program outside the abc function : " + window.value);
+        document.write("<br>");
+
+        // defining another function 
+        function bca(){
+            document.write("Value variable is used in bca function outside the abc function : " + window.value);
+        }
+
+        // calling the bca function
+        bca();
+    </script>
+</body>
+</html>
