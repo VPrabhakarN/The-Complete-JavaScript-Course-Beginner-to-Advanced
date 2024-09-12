@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Global Variable</title>
+</head>
+<body>
+    <script>
+        
+        // defining global variable which is accessible everywhere through the program 
+        var glob = "This is global variable!";
+
+        function abc(){
+            document.write(glob); // accessing the global variable inside the block or function 
+        }
+
+        // calling function 
+        abc();
+
+        document.write("<br>");
+        document.write(glob); // accessing the global variable inside the block or function
+        document.write("<br>");
+
+        function bca(){
+            document.write(glob); // accessing the global variable inside the block or function
+        }
+
+        // calling function
+        bca();
+
+    </script>
+</body>
+</html>
